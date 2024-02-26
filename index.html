@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Айтишечка</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="up">
+        <a href="#header">
+            <img src="./img/arrow_up_cshay87zfupn.svg" alt="">
+        </a>
+    </nav>
+    <header  id="header">
+            <h1>Айтишечка</h1>
+            <h2>
+                Айтишечка - ваш надежный партнер в поиске персонала IT,<br>
+                готовый помочь вам достичь успеха и процветания.
+            </h2>
+        <section>
+            <button>Оставить заявку</button>
+            <button>Узнать подробнее</button>
+        </section>
+            <a href="#main"><img src="./img/down_chevron_ygn4re3ktn8k.svg" alt="v" id="btn_down"></a>
+    </header>
+    <main id="main">
+        <section>
+            <h1>О компании</h1>
+            <h2>
+                Айтишечка - это инновационная компания,<br>
+                специализирующаяся на наборе<br>
+                высококвалифицированного персонала в IT сферу.<br>
+                Наша цель - связать талантливых профессионалов с<br>
+                ведущими технологическими компаниями, чтобы<br>
+                удовлетворить их потребности в поиске лучших<br>
+                специалистов.
+            </h2>
+        </section>
+        <section>
+            <h1>3 причины выбрать нас</h1>
+            <div class="cards">
+                <div>
+                    <h1>01.</h1>
+                    <h2>
+                        Экспертиза в<br>
+                        IT сфере
+                    </h2>
+                    <p>
+                        Мы обладаем обширной<br>
+                        сетью контактов и ресурсов,<br>
+                        что позволяет нам находить и<br>
+                        привлекать лучших<br>
+                        кандидатов.
+                    </p>
+                </div>
+                <div>
+                    <h1>02.</h1>
+                    <h2>
+                        Индивидуальный<br>
+                        подход
+                    </h2>
+                    <p>
+                        Мы стремимся понять<br>
+                        потребности каждого клиента<br>
+                        и предлагаем решения,<br>
+                        которые соответствуют их<br>
+                        бизнес-целям.
+                    </p>
+                </div>
+                <div>
+                    <h1>03.</h1>
+                    <h2>
+                        Качество и<br>
+                        надежность
+                    </h2>
+                    <p>
+                        Мы стремимся превзойти<br>
+                        ожидания клиентов и<br>
+                        постоянно<br>
+                        совершенствуемся.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Наши партнеры :</h1>
+            <div>
+                <img src="./img/bear.png" alt="">
+                <img src="./img/gosling.jpg" alt="">
+                <img src="./img/breadpit.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>Оставьте свою<br>заявку!</h1>
+                <label id="name_label">Имя *</label>
+                <input type="text" autocomplete="off" name="name" id="name" onfocus="holder_anim(name_input, name_label, 'up')" onclick="holder_anim(name_input, name_label, 'up')" onblur="holder_anim(name_input, name_label, 'down')">
+                <p id="name_check">Поле обязательно для заполнения</p>
+                <label id="tel_label">Телефон *</label>
+                <input type="tel" autocomplete="off" name="tel" id="tel" onfocus="holder_anim(tel_input, tel_label, 'up')" onclick="holder_anim(tel_input, tel_label, 'up')" onblur="holder_anim(tel_input, tel_label, 'down')">
+                <p id="tel_check">Поле обязательно для заполнения</p>
+                <button onclick="valid()">Отправить</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Контакты</h1>
+        <h2>г. Москва, ул.Мечты,переулок 360.Дом Коммунарка</h2>
+        <div>
+            <p>8 800 555 35 35</p>
+            <p>aitishechka@.ru</p>
+        </div>
+        <div>
+            <p>Конструктор сайтов от</p>
+            <img src="./img/tinkoff-logo-white.svg" alt="">
+        </div>
+    </footer>
+</body>
+<script src="./scripts/input_tel_validator.js"></script>
+<script src="./scripts/holder_anim.js"></script>
+<script src="./scripts/button_down_scroll.js"></script>
+<script src="./scripts/buton_up_scroll.js"></script>
+<script src="./scripts/sending_script.js"></script>
+</html>
